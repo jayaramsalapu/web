@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   Sparkles, 
   Droplet, 
@@ -100,8 +101,9 @@ export default function HomeClient() {
       <Header />
       <Cart />
 
-      {/* ================= HERO SECTION ================= */}
-      <section id="home" className="relative pt-26 pb-24 overflow-hidden bg-gradient-to-b from-slate-50/70 via-white to-slate-50/50">
+      <main className="flex-grow">
+        {/* ================= HERO SECTION ================= */}
+        <section id="home" className="relative pt-30 pb-24 overflow-hidden bg-gradient-to-b from-slate-50/70 via-white to-slate-50/50">
         {/* Soft Organic Background Blurs */}
         <div className="absolute top-0 right-0 w-[45rem] h-[45rem] bg-emerald-50/40 rounded-full blur-3xl opacity-70 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[35rem] h-[35rem] bg-sky-50/30 rounded-full blur-3xl opacity-60 pointer-events-none" />
@@ -185,9 +187,12 @@ export default function HomeClient() {
             
             <div className="relative w-full max-w-lg z-10 bg-gradient-to-br from-slate-100/70 to-white/95 p-6 sm:p-8 rounded-[3rem] border border-slate-200/50 shadow-[0_20px_50px_rgba(15,23,42,0.03)] animate-float">
               
-              <img
+              <Image
                 src="/All-products.png"
                 alt="TM Solutions Premium Product Catalog"
+                width={500}
+                height={400}
+                priority
                 className="w-full h-auto object-contain rounded-2xl drop-shadow-[0_15px_30px_rgba(0,0,0,0.04)]"
               />
 
@@ -227,7 +232,7 @@ export default function HomeClient() {
                 <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-lg mb-6">
                   60%
                 </div>
-                <h4 className="text-lg font-bold text-text-charcoal font-display mb-2">Water Dilution</h4>
+                <h3 className="text-lg font-bold text-text-charcoal font-display mb-2">Water Dilution</h3>
                 <p className="text-slate-500 text-xs leading-relaxed">
                   Competitors ship bulky water jugs. You pay for single-use plastic waste and logistics rather than the active surfactant base.
                 </p>
@@ -241,7 +246,7 @@ export default function HomeClient() {
                 <div className="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-lg mb-6">
                   VOCs
                 </div>
-                <h4 className="text-lg font-bold text-text-charcoal font-display mb-2">Hazardous Fumes</h4>
+                <h3 className="text-lg font-bold text-text-charcoal font-display mb-2">Hazardous Fumes</h3>
                 <p className="text-slate-500 text-xs leading-relaxed">
                   Acidic compounds and chlorine bleach emit fumes in enclosed washrooms, inducing respiratory stress and eating away at ceramic grout.
                 </p>
@@ -255,7 +260,7 @@ export default function HomeClient() {
                 <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-lg mb-6">
                   Sticky
                 </div>
-                <h4 className="text-lg font-bold text-text-charcoal font-display mb-2">Synthetic Soap Residue</h4>
+                <h3 className="text-lg font-bold text-text-charcoal font-display mb-2">Synthetic Soap Residue</h3>
                 <p className="text-slate-500 text-xs leading-relaxed">
                   Diluted fluids leave sticky soap films that attract dust immediately, forcing you to scrub twice as often to maintain surface shine.
                 </p>
@@ -289,7 +294,7 @@ export default function HomeClient() {
                     <Droplet className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-800">🌿 Eco-Conscious Approach</h4>
+                    <h3 className="text-sm font-bold text-slate-800">🌿 Eco-Conscious Approach</h3>
                     <p className="text-xs text-slate-500 mt-0.5">Formulated to reduce unnecessary chemical waste and excessive product usage.</p>
                   </div>
                 </div>
@@ -299,7 +304,7 @@ export default function HomeClient() {
                     <ShieldCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-800">⚡ Faster Cleaning Results</h4>
+                    <h3 className="text-sm font-bold text-slate-800">⚡ Faster Cleaning Results</h3>
                     <p className="text-xs text-slate-500 mt-0.5">Cuts through dirt and stains quickly, helping save time during daily cleaning.</p>
                   </div>
                 </div>
@@ -309,7 +314,7 @@ export default function HomeClient() {
                     <Leaf className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-800">🏠 Made for Every Corner of Your Home</h4>
+                    <h3 className="text-sm font-bold text-slate-800">🏠 Made for Every Corner of Your Home</h3>
                     <p className="text-xs text-slate-500 mt-0.5">Ideal for floors, bathrooms, laundry, and everyday household cleaning needs.</p>
                   </div>
                 </div>
@@ -321,7 +326,7 @@ export default function HomeClient() {
                 
                 <div className="p-8 rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
                   <div className="text-2xl mb-4">💧</div>
-                  <h4 className="font-bold text-text-charcoal font-display text-sm mb-2">Less Product Required</h4>
+                  <h3 className="font-bold text-text-charcoal font-display text-sm mb-2">Less Product Required</h3>
                   <p className="text-xs text-slate-400 leading-relaxed">
                     Highly concentrated formulas deliver better cleaning results using smaller quantities compared to ordinary cleaners.
                   </p>
@@ -329,7 +334,7 @@ export default function HomeClient() {
 
                 <div className="p-8 rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
                   <div className="text-2xl mb-4">🌿</div>
-                  <h4 className="font-bold text-text-charcoal font-display text-sm mb-2">Essential Oil Aromas</h4>
+                  <h3 className="font-bold text-text-charcoal font-display text-sm mb-2">Essential Oil Aromas</h3>
                   <p className="text-xs text-slate-400 leading-relaxed">
                     We steer clear of synthetic fragrances. Fresh notes of lemongrass and pine disinfect and uplift bathroom atmosphere.
                   </p>
@@ -337,7 +342,7 @@ export default function HomeClient() {
 
                   <div className="p-8 rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
                   <div className="text-2xl mb-4">⚡</div>
-                  <h4 className="font-bold text-text-charcoal font-display text-sm mb-2">Deep Cleaning Power</h4>
+                  <h3 className="font-bold text-text-charcoal font-display text-sm mb-2">Deep Cleaning Power</h3>
                   <p className="text-xs text-slate-400 leading-relaxed">
                    Removes stubborn dirt, grease, and stains from floors, bathrooms, and surfaces without excessive scrubbing.
                   </p>
@@ -345,7 +350,7 @@ export default function HomeClient() {
 
                 <div className="p-8 rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
                   <div className="text-2xl mb-4">🛡️</div>
-                  <h4 className="font-bold text-text-charcoal font-display text-sm mb-2">Anti-Static Polymer</h4>
+                  <h3 className="font-bold text-text-charcoal font-display text-sm mb-2">Anti-Static Polymer</h3>
                   <p className="text-xs text-slate-400 leading-relaxed">
                     Leaves an micro-shield that repels dust settlement, keeping marble and tiling gleaming clean for up to 3 days.
                   </p>
@@ -455,6 +460,8 @@ export default function HomeClient() {
                   <img
                     src={product.image}
                     alt={product.name}
+                    width={300}
+                    height={300}
                     className="max-h-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = `https://placehold.co/400x400/f8fafc/166534?text=${product.name}`;
@@ -487,10 +494,15 @@ export default function HomeClient() {
 
                     {/* Variant pack size select */}
                     <div className="mt-6">
-                      <label className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2">
+                      <label 
+                        htmlFor={`variant-select-${product.id}`}
+                        className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2"
+                      >
                         Select Variant Pack
                       </label>
                       <select
+                        id={`variant-select-${product.id}`}
+                        aria-label={`Select size for ${product.name}`}
                         value={`${selectedSizes[product.id]} — ₹${selectedPrices[product.id]}`}
                         onChange={(e) => {
                           const pack = product.packs[e.target.selectedIndex];
@@ -607,9 +619,11 @@ export default function HomeClient() {
             <div className="lg:col-span-5 relative">
               <div className="absolute inset-0 bg-gradient-to-br from-brand/10 to-slate-200/50 rounded-[3rem] -top-4 -left-4 -z-10 w-full h-full" />
               <div className="bg-slate-50 border border-slate-200/60 rounded-[3rem] p-8 shadow-xl flex items-center justify-center overflow-hidden">
-                <img
+                <Image
                   src="/logo.jpg"
                   alt="TM Solutions Brand Identity"
+                  width={400}
+                  height={400}
                   className="w-full max-w-sm rounded-[2rem] object-contain drop-shadow-lg"
                 />
               </div>
@@ -635,14 +649,14 @@ export default function HomeClient() {
                 <div className="flex items-start gap-3">
                   <TrendingUp className="w-5 h-5 text-brand mt-0.5" />
                   <div>
-                    <h5 className="text-xs font-bold text-slate-800 uppercase tracking-wider">Our Mission</h5>
+                    <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wider">Our Mission</h3>
                     <p className="text-[11px] text-slate-400 mt-1">Lifting toxic chemical burdens off modern Indian households.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Award className="w-5 h-5 text-brand mt-0.5" />
                   <div>
-                    <h5 className="text-xs font-bold text-slate-800 uppercase tracking-wider">Our Standards</h5>
+                    <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wider">Our Standards</h3>
                     <p className="text-[11px] text-slate-400 mt-1">Dermatologically tested formulas containing active organic bases.</p>
                   </div>
                 </div>
@@ -785,9 +799,9 @@ export default function HomeClient() {
             <span className="text-brand font-bold text-xs uppercase tracking-widest">
               Direct Contact
             </span>
-            <h3 className="text-2xl font-bold font-display text-text-charcoal mt-3">
+            <h2 className="text-2xl font-bold font-display text-text-charcoal mt-3">
               Drop Us a Line
-            </h3>
+            </h2>
             <p className="text-slate-400 text-xs mt-1">
               Have bulk orders or inquiries? Send us your message.
             </p>
@@ -846,11 +860,14 @@ export default function HomeClient() {
         </div>
       </section>
 
+      </main>
+
       {/* Floating WhatsApp Quick-CTA */}
       <a
         href="https://wa.me/919866987596"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="WhatsApp Support"
         className="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 flex items-center justify-center cursor-pointer border-2 border-white/20 group"
       >
         <MessageCircle className="w-6 h-6" />

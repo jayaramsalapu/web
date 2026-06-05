@@ -113,6 +113,8 @@ export default function ProductsClient() {
                   <img
                     src={product.image}
                     alt={product.name}
+                    width={300}
+                    height={300}
                     className="max-h-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = `https://placehold.co/400x400/f8fafc/166534?text=${product.name}`;
@@ -145,10 +147,15 @@ export default function ProductsClient() {
 
                     {/* Variant pack size select */}
                     <div className="mt-6">
-                      <label className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2">
+                      <label 
+                        htmlFor={`variant-select-${product.id}`}
+                        className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2"
+                      >
                         Select Variant Pack
                       </label>
                       <select
+                        id={`variant-select-${product.id}`}
+                        aria-label={`Select size for ${product.name}`}
                         value={`${selectedSizes[product.id]} — ₹${selectedPrices[product.id]}`}
                         onChange={(e) => {
                           const pack = product.packs[e.target.selectedIndex];
@@ -190,6 +197,7 @@ export default function ProductsClient() {
         href="https://wa.me/919866987596"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="WhatsApp Support"
         className="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 flex items-center justify-center cursor-pointer border-2 border-white/20"
       >
         <MessageCircle className="w-6 h-6" />

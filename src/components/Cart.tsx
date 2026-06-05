@@ -115,6 +115,7 @@ export default function Cart() {
           </div>
           <button
             onClick={closeCart}
+            aria-label="Close shopping cart drawer"
             className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-200/50 text-slate-500 hover:text-slate-900 transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
@@ -160,6 +161,7 @@ export default function Cart() {
                 <div className="flex items-center gap-2.5 bg-slate-50 p-1.5 rounded-xl border border-slate-100">
                   <button
                     onClick={() => updateQuantity(item.uniqueKey, -1)}
+                    aria-label={`Decrease ${item.name} quantity`}
                     className="w-6 h-6 flex items-center justify-center bg-white rounded-lg shadow-sm text-slate-600 hover:text-brand hover:scale-105 transition active:scale-95 cursor-pointer"
                   >
                     <Minus className="w-3.5 h-3.5" />
@@ -167,6 +169,7 @@ export default function Cart() {
                   <span className="font-bold text-xs w-4 text-center text-text-charcoal">{item.quantity}</span>
                   <button
                     onClick={() => updateQuantity(item.uniqueKey, 1)}
+                    aria-label={`Increase ${item.name} quantity`}
                     className="w-6 h-6 flex items-center justify-center bg-white rounded-lg shadow-sm text-slate-600 hover:text-brand hover:scale-105 transition active:scale-95 cursor-pointer"
                   >
                     <Plus className="w-3.5 h-3.5" />
@@ -176,6 +179,7 @@ export default function Cart() {
                 {/* Remove */}
                 <button
                   onClick={() => removeFromCart(item.uniqueKey)}
+                  aria-label={`Remove ${item.name} from shopping cart`}
                   className="text-slate-300 hover:text-rose-500 hover:scale-105 active:scale-95 transition-colors p-1 cursor-pointer"
                 >
                   <Trash2 className="w-4 h-4" />
