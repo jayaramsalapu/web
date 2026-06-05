@@ -15,12 +15,10 @@ const display = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tm-solutions.in"),
   title: "Premium Cleaning Products in India | TM Solutions",
   description: "Premium, concentrated eco-friendly cleaning products for modern Indian homes. Buy high-performance floor, toilet, and laundry care online.",
   keywords: ["floor cleaner", "toilet cleaner", "detergent powder", "detergent liquid", "eco friendly cleaning products", "bathroom cleaner", "Indian D2C home care", "TM Solutions"],
-  alternates: {
-    canonical: "https://tm-solutions.in",
-  },
   icons: {
     icon: "/logo.jpg",
     apple: "/logo.jpg",

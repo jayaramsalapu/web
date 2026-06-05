@@ -7,6 +7,9 @@ import Cart from "@/components/Cart";
 export const metadata = {
   title: "Cookies Policy | TM Solutions",
   description: "Learn about how cookies and browser storage are utilized at TM Solutions to save shopping cart configurations.",
+  alternates: {
+    canonical: "/cookies",
+  },
 };
 
 export default function CookiesPolicy() {

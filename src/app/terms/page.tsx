@@ -7,6 +7,9 @@ import Cart from "@/components/Cart";
 export const metadata = {
   title: "Terms of Service | TM Solutions",
   description: "Read the terms of service and usage conditions for TM Solutions cleaning products.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsOfService() {

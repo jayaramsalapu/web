@@ -7,6 +7,9 @@ import Cart from "@/components/Cart";
 export const metadata = {
   title: "Privacy Policy | TM Solutions",
   description: "Learn how TM Solutions collects, uses, and protects your personal data when using our cleaning product services.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPolicy() {
@@ -39,7 +42,7 @@ export default function PrivacyPolicy() {
 
             <div className="prose prose-slate max-w-none text-slate-600 text-xs sm:text-sm leading-relaxed space-y-6">
               <p>
-                At TM Solutions, we value the trust you place in us. This Privacy Policy details how we collect, use, and store your data when you visit our website `https://www.tmsolutions.in` and purchase our premium cleaning products.
+                At TM Solutions, we value the trust you place in us. This Privacy Policy details how we collect, use, and store your data when you visit our website `https://tm-solutions.in` and purchase our premium cleaning products.
               </p>
 
               <h3 className="font-bold text-text-charcoal text-base font-display">1. Information We Collect</h3>
