@@ -67,10 +67,6 @@ const schemaData = {
       "name": "TM Solutions",
       "url": "https://tm-solutions.in",
       "logo": "https://tm-solutions.in/logo.jpg",
-      "sameAs": [
-        "https://www.facebook.com/tmsolutionsindia",
-        "https://www.instagram.com/tmsolutions"
-      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+91-98669-87596",
