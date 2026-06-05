@@ -126,7 +126,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 text-slate-500 text-sm sm:text-base max-w-xl leading-relaxed mx-auto lg:mx-0">
-             TM Solutions delivers high-performance floor cleaners, toilet cleaners, detergents, and home care products designed to remove tough stains, dirt, and odors while using less quantity than ordinary cleaners.
+              TM Solutions delivers high-performance floor cleaners, toilet cleaners, detergents, and home care products designed to achieve powerful cleaning with less effort and in less time than ordinary cleaners, using a fraction of the quantity.
             </p>
 
             {/* Structured Value Points */}
@@ -554,7 +554,7 @@ export default function Home() {
               <div className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-4">
                 <div className="w-8 h-8 rounded-full bg-slate-200 text-xs font-bold text-slate-500 flex items-center justify-center">PK</div>
                 <div>
-                  <h5 className="text-xs font-bold text-slate-800">Pranitha Kumar</h5>
+                  <div className="text-xs font-bold text-slate-800">Pranitha Kumar</div>
                   <p className="text-[9px] text-slate-400 font-semibold uppercase tracking-wider">Hyderabad</p>
                 </div>
               </div>
@@ -571,7 +571,7 @@ export default function Home() {
               <div className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-4">
                 <div className="w-8 h-8 rounded-full bg-slate-200 text-xs font-bold text-slate-500 flex items-center justify-center">AS</div>
                 <div>
-                  <h5 className="text-xs font-bold text-slate-800">Aditya Sharma</h5>
+                  <div className="text-xs font-bold text-slate-800">Aditya Sharma</div>
                   <p className="text-[9px] text-slate-400 font-semibold uppercase tracking-wider">Mumbai</p>
                 </div>
               </div>
@@ -588,7 +588,7 @@ export default function Home() {
               <div className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-4">
                 <div className="w-8 h-8 rounded-full bg-slate-200 text-xs font-bold text-slate-500 flex items-center justify-center">MR</div>
                 <div>
-                  <h5 className="text-xs font-bold text-slate-800">Meera Reddy</h5>
+                  <div className="text-xs font-bold text-slate-800">Meera Reddy</div>
                   <p className="text-[9px] text-slate-400 font-semibold uppercase tracking-wider">Bangalore</p>
                 </div>
               </div>
@@ -720,9 +720,9 @@ export default function Home() {
                 <span className="text-[10px] font-bold text-brand uppercase tracking-widest bg-brand-light px-3 py-1 rounded-md">
                   Floor Care
                 </span>
-                <h4 className="text-base font-bold text-text-charcoal font-display mt-6 group-hover:text-brand transition duration-200">
+                <div className="text-base font-bold text-text-charcoal font-display mt-6 group-hover:text-brand transition duration-200">
                   How to Protect Luxury Marble & Granite Polish
-                </h4>
+                </div>
                 <p className="text-xs text-slate-400 mt-2 line-clamp-2">
                   Acidic floor cleaners erode calcium matrix inside marble, etching it permanently. Discover how active neutral enzymes lift grease safely.
                 </p>
@@ -730,7 +730,7 @@ export default function Home() {
                   href="/blog"
                   className="text-xs font-bold text-slate-900 mt-6 inline-flex items-center gap-1 hover:text-brand"
                 >
-                  Read Article <ArrowRight className="w-3.5 h-3.5" />
+                  Read Marble Guide <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             </div>
@@ -740,9 +740,9 @@ export default function Home() {
                 <span className="text-[10px] font-bold text-brand uppercase tracking-widest bg-brand-light px-3 py-1 rounded-md">
                   Laundry
                 </span>
-                <h4 className="text-base font-bold text-text-charcoal font-display mt-6 group-hover:text-brand transition duration-200">
+                <div className="text-base font-bold text-text-charcoal font-display mt-6 group-hover:text-brand transition duration-200">
                   Concentrated Liquids vs Powder Detergents
-                </h4>
+                </div>
                 <p className="text-xs text-slate-400 mt-2 line-clamp-2">
                   An in-depth chemical look at laundry cycles. Why liquids dissolve 100% and save your washing machine electronics from residue damage.
                 </p>
@@ -750,7 +750,7 @@ export default function Home() {
                   href="/blog"
                   className="text-xs font-bold text-slate-900 mt-6 inline-flex items-center gap-1 hover:text-brand"
                 >
-                  Read Article <ArrowRight className="w-3.5 h-3.5" />
+                  Read Detergent Guide <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             </div>
@@ -760,9 +760,9 @@ export default function Home() {
                 <span className="text-[10px] font-bold text-brand uppercase tracking-widest bg-brand-light px-3 py-1 rounded-md">
                   Eco Friendly
                 </span>
-                <h4 className="text-base font-bold text-text-charcoal font-display mt-6 group-hover:text-brand transition duration-200">
+                <div className="text-base font-bold text-text-charcoal font-display mt-6 group-hover:text-brand transition duration-200">
                   The Real Math Behind Eco Refill Concentrates
-                </h4>
+                </div>
                 <p className="text-xs text-slate-400 mt-2 line-clamp-2">
                   Learn how cutting water shipping weights out of consumer D2C models reduces household budgets and carbon emissions by up to 60%.
                 </p>
@@ -770,7 +770,7 @@ export default function Home() {
                   href="/blog"
                   className="text-xs font-bold text-slate-900 mt-6 inline-flex items-center gap-1 hover:text-brand"
                 >
-                  Read Article <ArrowRight className="w-3.5 h-3.5" />
+                  Read Economics Guide <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             </div>

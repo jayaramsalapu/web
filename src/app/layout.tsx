@@ -15,20 +15,24 @@ const display = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Best Cleaning Products in India | Floor, Toilet & Laundry Care - TM Solutions",
-  description: "Upgrade your household clean with premium, eco-friendly concentrated formulas designed for modern homes in India. Shop floor cleaners, toilet cleaners, and detergent liquids.",
+  title: "Premium Cleaning Products in India | TM Solutions",
+  description: "Premium, concentrated eco-friendly cleaning products for modern Indian homes. Buy high-performance floor, toilet, and laundry care online.",
   keywords: ["floor cleaner", "toilet cleaner", "detergent powder", "detergent liquid", "eco friendly cleaning products", "bathroom cleaner", "Indian D2C home care", "TM Solutions"],
   alternates: {
-    canonical: "https://www.tmsolutions.in",
+    canonical: "https://tm-solutions.in",
+  },
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
   },
   openGraph: {
     title: "TM Solutions | Premium Eco-Concentrated Cleaning Products",
     description: "Upgrade your household clean with premium, eco-friendly concentrated formulas designed for modern homes in India.",
-    url: "https://www.tmsolutions.in",
+    url: "https://tm-solutions.in",
     siteName: "TM Solutions",
     images: [
       {
-        url: "https://www.tmsolutions.in/logo.jpg",
+        url: "https://tm-solutions.in/logo.jpg",
         width: 1200,
         height: 630,
         alt: "TM Solutions Premium Products Showcase",
@@ -41,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TM Solutions | Next-Gen Cleaning Care",
     description: "Concentrated formulas that clean better with half the quantity.",
-    images: ["https://www.tmsolutions.in/logo.jpg"],
+    images: ["https://tm-solutions.in/logo.jpg"],
   },
   robots: {
     index: true,
@@ -61,10 +65,10 @@ const schemaData = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.tmsolutions.in/#organization",
+      "@id": "https://tm-solutions.in/#organization",
       "name": "TM Solutions",
-      "url": "https://www.tmsolutions.in",
-      "logo": "https://www.tmsolutions.in/logo.jpg",
+      "url": "https://tm-solutions.in",
+      "logo": "https://tm-solutions.in/logo.jpg",
       "sameAs": [
         "https://www.facebook.com/tmsolutionsindia",
         "https://www.instagram.com/tmsolutions"
@@ -79,24 +83,24 @@ const schemaData = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.tmsolutions.in/#website",
-      "url": "https://www.tmsolutions.in",
+      "@id": "https://tm-solutions.in/#website",
+      "url": "https://tm-solutions.in",
       "name": "TM Solutions",
       "description": "Premium Concentrated Eco-Cleaning Products in India",
       "publisher": {
-        "@id": "https://www.tmsolutions.in/#organization"
+        "@id": "https://tm-solutions.in/#organization"
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://www.tmsolutions.in/search?q={search_term_string}",
+        "target": "https://tm-solutions.in/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.tmsolutions.in/#localbusiness",
+      "@id": "https://tm-solutions.in/#localbusiness",
       "name": "TM Solutions India",
-      "image": "https://www.tmsolutions.in/logo.jpg",
+      "image": "https://tm-solutions.in/logo.jpg",
       "telephone": "+91-98669-87596",
       "email": "admin@tmsolutions.in",
       "address": {
@@ -128,9 +132,9 @@ const schemaData = {
     },
     {
       "@type": "Product",
-      "@id": "https://www.tmsolutions.in/#product-floor-cleaner",
+      "@id": "https://tm-solutions.in/#product-floor-cleaner",
       "name": "TM Solutions Eco-Concentrate Floor Cleaner",
-      "image": "https://www.tmsolutions.in/floor-cleaner.png",
+      "image": "https://tm-solutions.in/floor-cleaner.png",
       "description": "Ultra-concentrated, plant-based luxury floor cleaner. Offers high sanitization and zero streak residue with less usage.",
       "brand": {
         "@type": "Brand",
@@ -145,7 +149,7 @@ const schemaData = {
         "priceValidUntil": "2027-12-31",
         "availability": "https://schema.org/InStock",
         "seller": {
-          "@id": "https://www.tmsolutions.in/#organization"
+          "@id": "https://tm-solutions.in/#organization"
         }
       },
       "aggregateRating": {
@@ -156,7 +160,7 @@ const schemaData = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.tmsolutions.in/#faq",
+      "@id": "https://tm-solutions.in/#faq",
       "mainEntity": [
         {
           "@type": "Question",

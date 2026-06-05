@@ -33,12 +33,12 @@ export async function generateMetadata({ params }: PageProps) {
     title: `${post.metaTitle} | TM Solutions`,
     description: post.metaDescription,
     alternates: {
-      canonical: `https://www.tmsolutions.in/blog/${post.slug}`,
+      canonical: `https://tm-solutions.in/blog/${post.slug}`,
     },
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
-      url: `https://www.tmsolutions.in/blog/${post.slug}`,
+      url: `https://tm-solutions.in/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
       authors: ["TM Solutions Lab"],

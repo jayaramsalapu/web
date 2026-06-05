@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Allow: /blog/
 
-Sitemap: https://www.tmsolutions.in/sitemap.xml
+Sitemap: https://tm-solutions.in/sitemap.xml
