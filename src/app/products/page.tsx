@@ -16,7 +16,7 @@ const productsSchema = {
       "@type": "Product",
       "@id": "https://tm-solutions.in/products/#product-detergent-powder",
       "name": "TM Solutions Premium Detergent Powder",
-      "image": "https://tm-solutions.in/detergentpowder.png",
+      "image": "https://tm-solutions.in/detergentpowder.webp",
       "description": "Deep fabric penetration powder that lifts mud, oils, and sweat stains while maintaining fiber integrity and color brightness.",
       "brand": {
         "@type": "Brand",
@@ -44,7 +44,7 @@ const productsSchema = {
       "@type": "Product",
       "@id": "https://tm-solutions.in/products/#product-floor-cleaner",
       "name": "TM Solutions Eco-Concentrate Floor Cleaner",
-      "image": "https://tm-solutions.in/floor-cleaner.png",
+      "image": "https://tm-solutions.in/floor-cleaner.webp",
       "description": "Clinical sanitizing floor wash that cuts dust, oil splatters, and organic stains off marble, granite, and tile flooring with no streak residue.",
       "brand": {
         "@type": "Brand",
@@ -72,7 +72,7 @@ const productsSchema = {
       "@type": "Product",
       "@id": "https://tm-solutions.in/products/#product-toilet-cleaner",
       "name": "TM Solutions Acid-Free Toilet Cleaner",
-      "image": "https://tm-solutions.in/toilet-cleaner.png",
+      "image": "https://tm-solutions.in/toilet-cleaner.webp",
       "description": "Non-corrosive, acid-free toilet sanitation gel that safely melts limescale rings, rust stains, and bad odor without stripping ceramic glaze.",
       "brand": {
         "@type": "Brand",
@@ -100,7 +100,7 @@ const productsSchema = {
       "@type": "Product",
       "@id": "https://tm-solutions.in/products/#product-fabric-conditioner",
       "name": "TM Solutions Premium Fabric Conditioner",
-      "image": "https://tm-solutions.in/fabric-conditioner.png",
+      "image": "https://tm-solutions.in/fabric-conditioner.webp",
       "description": "Premium softening emulsion that wraps cottons and synthetic fibers in static-free softness, preventing fuzzing and leaving lasting scent.",
       "brand": {
         "@type": "Brand",
@@ -128,7 +128,7 @@ const productsSchema = {
       "@type": "Product",
       "@id": "https://tm-solutions.in/products/#product-detergent-liquid",
       "name": "TM Solutions Concentrated Detergent Liquid",
-      "image": "https://tm-solutions.in/detergent liquid.png",
+      "image": "https://tm-solutions.in/detergent liquid.webp",
       "description": "Highly concentrated liquid laundry wash engineered for high-efficiency front and top loading washing machines. Rinses clean.",
       "brand": {
         "@type": "Brand",
@@ -156,7 +156,7 @@ const productsSchema = {
       "@type": "Product",
       "@id": "https://tm-solutions.in/products/#product-phenyl-solution",
       "name": "TM Solutions Premium Phenyl Solution",
-      "image": "https://tm-solutions.in/pheynl solution.png",
+      "image": "https://tm-solutions.in/pheynl solution.webp",
       "description": "Traditional white pine disinfecting solution containing double the concentration of commercial phenyly, delivering deep sanitation.",
       "brand": {
         "@type": "Brand",

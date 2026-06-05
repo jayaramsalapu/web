@@ -19,7 +19,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Detergent Powder",
-    image: "/detergentpowder.png",
+    image: "/detergentpowder.webp",
     category: "Laundry",
     packs: [
       { size: "500 g", price: 99 },
@@ -34,7 +34,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Floor Cleaner",
-    image: "/floor-cleaner.png",
+    image: "/floor-cleaner.webp",
     category: "Floor Care",
     packs: [
       { size: "500 ml", price: 79 },
@@ -49,7 +49,7 @@ export const products: Product[] = [
   {
     id: 3,
     name: "Toilet Cleaner",
-    image: "/toilet-cleaner.png",
+    image: "/toilet-cleaner.webp",
     category: "Bathroom",
     packs: [
       { size: "500 ml", price: 69 },
@@ -63,7 +63,7 @@ export const products: Product[] = [
   {
     id: 4,
     name: "Fabric Conditioner",
-    image: "/fabric-conditioner.png",
+    image: "/fabric-conditioner.webp",
     category: "Laundry",
     packs: [
       { size: "500 ml", price: 89 },
@@ -77,7 +77,7 @@ export const products: Product[] = [
   {
     id: 5,
     name: "Detergent Liquid",
-    image: "/detergent liquid.png",
+    image: "/detergent liquid.webp",
     category: "Laundry",
     packs: [
       { size: "1 L", price: 179 },
@@ -91,7 +91,7 @@ export const products: Product[] = [
   {
     id: 6,
     name: "Phenyl Solution",
-    image: "/pheynl solution.png",
+    image: "/pheynl solution.webp",
     category: "Floor Care",
     packs: [
       { size: "500 ml", price: 49 },

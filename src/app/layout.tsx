@@ -6,12 +6,14 @@ const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
   weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 const display = Outfit({
   subsets: ["latin"],
   variable: "--font-display",
   weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

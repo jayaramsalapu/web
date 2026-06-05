@@ -14,7 +14,7 @@ const homeSchema = {
       "@type": "Product",
       "@id": "https://tm-solutions.in/#product-floor-cleaner",
       "name": "TM Solutions Eco-Concentrate Floor Cleaner",
-      "image": "https://tm-solutions.in/floor-cleaner.png",
+      "image": "https://tm-solutions.in/floor-cleaner.webp",
       "description": "Ultra-concentrated, plant-based luxury floor cleaner. Offers high sanitization and zero streak residue with less usage.",
       "brand": {
         "@type": "Brand",

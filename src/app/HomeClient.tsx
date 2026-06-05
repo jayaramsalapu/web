@@ -188,7 +188,7 @@ export default function HomeClient() {
             <div className="relative w-full max-w-lg z-10 bg-gradient-to-br from-slate-100/70 to-white/95 p-6 sm:p-8 rounded-[3rem] border border-slate-200/50 shadow-[0_20px_50px_rgba(15,23,42,0.03)] animate-float">
               
               <Image
-                src="/All-products.png"
+                src="/All-products.webp"
                 alt="TM Solutions Premium Product Catalog"
                 width={500}
                 height={400}
@@ -457,15 +457,13 @@ export default function HomeClient() {
                   {/* Subtle BG Radial glow */}
                   <div className="absolute inset-0 bg-radial-gradient from-emerald-100/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
                     width={300}
                     height={300}
+                    loading="lazy"
                     className="max-h-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://placehold.co/400x400/f8fafc/166534?text=${product.name}`;
-                    }}
                   />
                 </div>
 

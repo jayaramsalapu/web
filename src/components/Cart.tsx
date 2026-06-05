@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { ShoppingBag, X, Plus, Minus, Trash2, ArrowRight } from "lucide-react";
 import { getCart, removeFromCart, updateQuantity, clearCart, CartItem } from "@/lib/cart";
 
@@ -140,13 +141,13 @@ export default function Cart() {
               >
                 {/* Item Thumbnail */}
                 <div className="w-16 h-16 bg-slate-50 rounded-xl flex-shrink-0 flex items-center justify-center p-2 border border-slate-100">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.name}
+                    width={64}
+                    height={64}
+                    loading="lazy"
                     className="max-h-full object-contain"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://placehold.co/100x100/f8fafc/166534?text=${item.name[0]}`;
-                    }}
                   />
                 </div>
 

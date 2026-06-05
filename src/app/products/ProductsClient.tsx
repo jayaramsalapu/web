@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -110,15 +111,13 @@ export default function ProductsClient() {
                   {/* Subtle BG Radial glow */}
                   <div className="absolute inset-0 bg-radial-gradient from-emerald-100/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
                     width={300}
                     height={300}
+                    loading="lazy"
                     className="max-h-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://placehold.co/400x400/f8fafc/166534?text=${product.name}`;
-                    }}
                   />
                 </div>
 
