@@ -47,7 +47,7 @@ export default function Header() {
           <Link href="/#home" className="hover:text-brand transition-colors duration-200">
             Home
           </Link>
-          <Link href="/#products" className="hover:text-brand transition-colors duration-200">
+          <Link href="/products" className="hover:text-brand transition-colors duration-200">
             Products
           </Link>
           <Link href="/#about" className="hover:text-brand transition-colors duration-200">
@@ -93,7 +93,7 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="/#products"
+              href="/products"
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-brand py-2 border-b border-slate-50 transition"
             >
