@@ -22,8 +22,11 @@ export const metadata: Metadata = {
   description: "Premium, concentrated eco-friendly cleaning products for modern Indian homes. Buy high-performance floor, toilet, and laundry care online.",
   keywords: ["floor cleaner", "toilet cleaner", "detergent powder", "detergent liquid", "eco friendly cleaning products", "bathroom cleaner", "Indian D2C home care", "TM Solutions"],
   icons: {
-    icon: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/icon.png",
   },
   openGraph: {
     title: "TM Solutions | Premium Eco-Concentrated Cleaning Products",
